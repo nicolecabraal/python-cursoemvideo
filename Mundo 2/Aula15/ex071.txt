@@ -1,0 +1,42 @@
+Como funciona o programa:
+Cédulas Disponíveis: O programa define uma lista com os valores das cédulas disponíveis: R$50, R$20, R$10 e R$1.
+
+Entrada do Usuário: O programa pede ao usuário que insira o valor a ser sacado. O valor deve ser um número inteiro positivo.
+
+Verificação de Valor Válido: O programa verifica se o valor do saque é maior que zero. Se não for, ele imprime uma mensagem de erro.
+
+Cálculo das Cédulas:
+
+O programa itera sobre cada tipo de cédula disponível.
+Para cada cédula, ele calcula quantas cédulas daquele valor são necessárias usando a divisão inteira (//).
+Se a quantidade for maior que zero, ela é armazenada em um dicionário quantidade_cedulas.
+O valor do saque é atualizado para o restante subtraindo a quantidade total que foi entregue em cédulas daquele valor.
+Exibição dos Resultados: Após calcular a quantidade de cada cédula, o programa imprime quantas cédulas de cada valor serão entregues.
+
+
+# Inicializa as cédulas disponíveis
+cedulas = [50, 20, 10, 1]
+
+# Pergunta ao usuário o valor a ser sacado
+valor_saque = int(input('Digite o valor a ser sacado: R$ '))
+
+# Inicializa um dicionário para armazenar a quantidade de cédulas
+quantidade_cedulas = {}
+
+# Verifica se o valor do saque é positivo
+if valor_saque <= 0:
+    print('Valor inválido. O valor deve ser um número inteiro positivo.')
+else:
+    for cedula in cedulas:
+        # Calcula quantas cédulas daquele valor são necessárias
+        quantidade = valor_saque // cedula
+        # Armazena a quantidade no dicionário
+        if quantidade > 0:
+            quantidade_cedulas[cedula] = quantidade
+        # Atualiza o valor do saque para o restante
+        valor_saque -= quantidade * cedula
+
+    # Exibe a quantidade de cédulas a serem entregues
+    print('Cédulas a serem entregues:')
+    for cedula, quantidade in quantidade_cedulas.items():
+        print(f'R$ {cedula}: {quantidade} cédula(s)')

@@ -1,0 +1,12 @@
+O que é a pasta pyache? 
+
+A pasta é criada automaticamente pelo Python para armazenar arquivos compilados de módulos. Esses arquivos têm a extensão .pyc e são gerados quando um módulo Python é importado. O objetivo do __pycache__ é melhorar o desempenho do programa, evitando que o Python tenha que recompilar o módulo toda vez que ele é executado.
+
+
+
+O Que Fazer com Isso
+Nada a se preocupar: Essa pasta e os arquivos dentro dela são normais e não precisam ser manipulados manualmente. O Python irá gerenciá-los automaticamente.
+
+Não edite: Não é necessário (e não é recomendável) tentar editar os arquivos .pyc, pois eles são uma representação binária do código-fonte Python.
+
+Limpeza: Se você quiser limpar o projeto, pode excluir a pasta __pycache__, mas isso fará com que o Python tenha que recompilar os módulos na próxima execução.

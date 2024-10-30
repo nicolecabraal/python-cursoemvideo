@@ -1,0 +1,9 @@
+Em Python, você pode verificar se um número é par ou ímpar utilizando o operador módulo (%), que retorna o resto da divisão entre dois números. A regra básica é a seguinte:
+
+Um número é par se o resto da divisão por 2 for igual a 0 (numero % 2 == 0).
+Um número é ímpar se o resto da divisão por 2 for diferente de 0 (numero % 2 != 0).
+
+Explicação:
+Quando você faz numero % 2, o Python divide o número por 2 e retorna o resto dessa divisão.
+Se o resto for 0, significa que o número é divisível por 2, então ele é par.
+Se o resto for 1, significa que o número não é divisível por 2, então ele é ímpar.

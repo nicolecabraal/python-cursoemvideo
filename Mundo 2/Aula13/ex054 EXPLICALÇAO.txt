@@ -1,0 +1,22 @@
+Explicação:
+Importação da biblioteca:
+
+O programa importa a biblioteca datetime para obter o ano atual, permitindo calcular a idade das pessoas.
+Obtendo o ano atual:
+
+datetime.now().year captura o ano atual.
+Contadores:
+
+maiores e menores são inicializados em zero para contar as pessoas maiores e menores de idade.
+Leitura do ano de nascimento:
+
+Um laço for é usado para solicitar o ano de nascimento de sete pessoas.
+Cálculo da idade:
+
+Para cada ano de nascimento, o programa calcula a idade subtraindo o ano de nascimento do ano atual.
+Verificação da maioridade:
+
+O programa verifica se a idade é menor que 18 (menor de idade) ou 18 ou mais (maior de idade) e atualiza os contadores correspondentes.
+Exibição dos resultados:
+
+Após o loop, o programa imprime quantas pessoas são menores de idade e quantas são maiores.

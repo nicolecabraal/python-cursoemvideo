@@ -1,0 +1,13 @@
+Detalhes do show=False:
+Parâmetro opcional:
+
+Quando você define show=False na assinatura da função, está dizendo que, se o usuário não passar um valor para o parâmetro show ao chamar a função, ele será automaticamente considerado como False.
+Ou seja, se o usuário simplesmente chamar fatorial(5), o Python interpretará isso como fatorial(5, show=False).
+Controle do comportamento:
+
+Dentro da função, show é usado para decidir se o processo de cálculo (as multiplicações) será exibido na tela.
+Se show for True, a função vai mostrar cada passo do cálculo (ex.: 5 x 4 x 3 x 2 x 1 =).
+Se show for False, a função apenas calcula o fatorial sem exibir esses detalhes.
+
+Por que usar o show=False?
+Ele torna o parâmetro opcional, permitindo que o usuário escolha se quer ver o cálculo ou não, sem precisar sempre passar o valor. Além disso, define um comportamento padrão (não mostrar o cálculo) quando o usuário não se importa com esse detalhe.

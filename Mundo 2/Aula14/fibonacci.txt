@@ -1,0 +1,12 @@
+Explicação do código:
+Função fibonacci(n):
+
+Inicializa uma lista fib_sequence para armazenar os termos.
+Usa duas variáveis, a e b, para manter os dois últimos termos da sequência.
+Um laço for itera n vezes, adicionando a à lista e atualizando a e b para os próximos termos da sequência.
+Leitura do usuário:
+
+O programa solicita que o usuário insira um número inteiro n.
+Saída:
+
+O programa chama a função fibonacci(n) e imprime os n primeiros elementos da sequência de Fibonacci.
